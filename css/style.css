@@ -91,91 +91,125 @@
 
 */*  Css Hoja reservas */
 
-.title_reservas {
-  text-align: center;
-
-
-}
-
-.body_reservas {
-  background-color: grey;
-  
-}
-
-.imagen-reservas {
-
-}
-
-
-
-
-
-
-
-
-
-
 * {
   box-sizing: border-box;
 }
 
-/* Create three columns of equal width */
+/* columna de precios (2)*/
 .columns {
   float: left;
   width: 33.3%;
   padding: 8px;
+  
 }
 
-/* Style the list */
+
 .price {
   list-style-type: none;
-  border: 1px solid #eee;
+  border: 1px solid rgb(46, 8, 8);
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-/* Add shadows on hover */
+/* sombreado*/
 .price:hover {
   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
 
-/* Pricing header */
+
 .price .header {
-  background-color: rgb(93, 61, 180);
+  background-color: rgb(46, 91, 214);
   color: white;
   font-size: 25px;
 }
 
-/* List items */
+**/* Lista precio */
 .price li {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgb(114, 8, 8);
   padding: 20px;
   text-align: center;
 }
 
-/* Grey list item */
+
 .price .grey {
-  background-color: #eee;
+  background-color: rgb(240, 240, 240);
   font-size: 20px;
 }
 
-/* The "Sign Up" button */
+/* boton */
 .button {
-  background-color: #04AA6D;
+  background-color: #e6e9e8;
   border: none;
-  color: white;
+  color: rgb(9, 186, 192);
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
 }
 
-/* Change the width of the three columns to 100%
-(to stack horizontally on small screens) */
+
 @media only screen and (max-width: 600px) {
   .columns {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 320px){
+  .imagen-precios {
+    width: 20%;
+  }
+}
+
+
+
+
+
+
+
+
+*/* Login Page */
+
+button {   
+  background-color: #4CAF50;   
+  width: 100%;  
+   color: orange;   
+   padding: 15px;   
+   margin: 10px 0px;   
+   border: red;   
+   cursor: pointer;   
+    }   
+form {   
+   border: 3px solid #242f8f;   
+}   
+input[type=text], input[type=password] {   
+   width: 100%;   
+   margin: 8px 0;  
+   padding: 12px 20px;   
+   display: inline-block;   
+   border: 2px solid green;   
+   box-sizing: border-box;   
+}  
+button:hover {   
+   opacity: 0.7;   
+}   
+.cancelbtn {   
+   width: auto;   
+   padding: 10px 18px;  
+   margin: 10px 5px;  
+}   
+   
+
+.container-login {   
+   padding: 25px;   
+   background-color: white;  
+}   
+
+@media only screen and (max-width:320px) {
+
+}
+
+.body-login {
+  background-color: aqua;
 }
