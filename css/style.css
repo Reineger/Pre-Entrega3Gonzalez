@@ -1,0 +1,181 @@
+/* css para mi Index */
+
+
+
+/* Se genero Responsive para pantallas pequeñas */
+
+
+.title_index {
+  color: rgb(220, 220, 223);
+  text-align: center;
+}
+
+
+
+.navbar_index {
+  @media (min with 320px) text-align: right;
+  width: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.imagen-home { 
+  width: 500px;
+}
+
+
+@media only screen and (max-width: 320px) {
+  .imagen-home {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+
+
+*/*@media only screen and (max-width: 320px) {
+  .contenedor_landing {
+    position: relative;
+    width: 100px;
+    height: 100%;
+
+  }
+  .imagen_contenedor2 {
+    z-index: 0;
+  }
+  .imagen_contenedor3 {
+    z-index: 1;
+  }
+}
+*/
+.contenedor_landing {
+  display: flex;flex-direction: row;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 320px) {
+  .contenedor_landing {
+    display: flex; flex-direction: column;
+    justify-content: center;
+
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .info_landing {
+    font-size: small;
+    text-align:start;
+
+  }
+}
+
+.body_index {
+  background-color: rgb(130, 179, 179);
+}
+
+@media (max-width: 320px){
+  .footer1 {
+    font-size: small;
+    text-align:center;
+
+  }
+}
+  
+
+
+
+*/*  Css Hoja reservas */
+
+.title_reservas {
+  text-align: center;
+
+
+}
+
+.body_reservas {
+  background-color: grey;
+  
+}
+
+.imagen-reservas {
+
+}
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: rgb(93, 61, 180);
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
