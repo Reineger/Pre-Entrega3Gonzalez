@@ -1,0 +1,353 @@
+/* css para mi Index */
+
+
+
+/* Se genero Responsive para pantallas pequeñas */
+
+
+.title_index {
+    color: rgb(220, 220, 223);
+    text-align: center;
+  }
+  
+  
+  
+  .navbar_index {
+    @media (min with 320px) text-align: right;
+    width: 100%;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  
+  .imagen-home {
+    width: 500px;
+  }
+  
+  
+  @media only screen and (max-width: 320px) {
+    .imagen-home {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+  
+  
+  *
+  .contenedor_landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .contenedor_landing {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .info_landing {
+      font-size: small;
+      text-align: start;
+  
+    }
+  }
+  
+  .body_index {
+    background-color: rgb(130, 179, 179);
+  }
+  
+  @media (max-width: 320px) {
+    .footer1 {
+      font-size: small;
+      text-align: center;
+  
+    }
+  }
+  
+  
+  ---------------------------------------------------------- *
+  /*  Css Hoja reservas */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Estilo 2 columnas */
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  /* Estilo de la lista */
+  .price {
+    list-style-type: none;
+    border: 1px solid rgb(14, 0, 0);
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  /* Sombra listado */
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(231, 38, 38, 0.178)
+  }
+  
+  /* Color y formato header*/
+  .price .header {
+    background-color: rgb(128, 119, 78);
+    background: rgb(101, 11, 148);
+    background: linear-gradient(90deg, rgba(101, 11, 148, 1) 8%, rgba(251, 171, 65, 1) 48%, rgba(252, 69, 176, 1) 90%);
+    font-size: 25px;
+  }
+  
+  /* propiedades List*/
+  .price li {
+    border-bottom: 1px solid rgb(109, 236, 105);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* propiedades precios */
+  .price .grey {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 20%, rgba(252, 105, 50, 1) 50%, rgba(252, 176, 69, 1) 79%);
+    font-size: 20px;
+  }
+  
+  ----------------------------------------------------------------- *
+  /* CSS Usuario*/
+  
+  
+  
+  /* Boton */
+  .button {
+    background-color: #1352d8;
+    border: none;
+    color: rgb(20, 0, 0);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Responsive columnas */
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .imagen-precios {
+      width: 20%;
+    }
+  }
+  
+  .body-reservas {
+    background: rgb(197, 53, 205);
+    background: linear-gradient(0deg, rgba(197, 53, 205, 0.9570203081232493) 0%, rgba(255, 208, 106, 1) 92%);
+  }
+  
+  
+  
+  
+  /* Usuario Log In */
+  * {
+    box-sizing: border-box
+  }
+  
+  /* Padding de containers*/
+  .container {
+    padding: 16px;
+  }
+  
+  /* Propiedades y responsive para  usuario y contraseña*/
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus,
+  input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  .body-usuario {
+    background: rgb(197, 53, 205);
+    background: linear-gradient(0deg, rgba(197, 53, 205, 0.9570203081232493) 0%, rgba(255, 208, 106, 1) 92%);
+  
+  }
+  
+  
+  
+  --------------------------------------------------------------------
+  
+  */* Css Info About Us */
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #2876cfbe;
+    color: rgb(8, 7, 7);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  
+  
+  
+  -------------------------------------------------------
+  
+  */* CSS Pago */
+  
+  .row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; 
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; 
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%;
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  
+  @media (max-width: 320px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  
+  
+  
+  
