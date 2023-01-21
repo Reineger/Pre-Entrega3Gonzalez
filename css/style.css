@@ -99,14 +99,14 @@
   box-sizing: border-box;
 }
 
-/* Create three columns of equal width */
+/* Estilo 2 columnas */
 .columns {
   float: left;
   width: 33.3%;
   padding: 8px;
 }
 
-/* Style the list */
+/* Estilo de la lista */
 .price {
   list-style-type: none;
   border: 1px solid rgb(14, 0, 0);
@@ -116,34 +116,39 @@
   transition: 0.3s;
 }
 
-/* Add shadows on hover */
+/* Sombra listado */
 .price:hover {
   box-shadow: 0 8px 12px 0 rgba(231, 38, 38, 0.178)
 }
 
-/* Pricing header */
+/* Color y formato header*/
 .price .header {
   background-color: rgb(128, 119, 78);
-  background: rgb(101,11,148);
-  background: linear-gradient(90deg, rgba(101,11,148,1) 8%, rgba(251,171,65,1) 48%, rgba(252,69,176,1) 90%);
+  background: rgb(101, 11, 148);
+  background: linear-gradient(90deg, rgba(101, 11, 148, 1) 8%, rgba(251, 171, 65, 1) 48%, rgba(252, 69, 176, 1) 90%);
   font-size: 25px;
 }
 
-/* List items */
+/* propiedades List*/
 .price li {
   border-bottom: 1px solid rgb(109, 236, 105);
   padding: 20px;
   text-align: center;
 }
 
-/* Grey list item */
+/* propiedades precios */
 .price .grey {
-background: rgb(131,58,180);
-background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 20%, rgba(252,105,50,1) 50%, rgba(252,176,69,1) 79%);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 20%, rgba(252, 105, 50, 1) 50%, rgba(252, 176, 69, 1) 79%);
   font-size: 20px;
 }
 
-/* The "Sign Up" button */
+----------------------------------------------------------------- *
+/* CSS Usuario*/
+
+
+
+/* Boton */
 .button {
   background-color: #1352d8;
   border: none;
@@ -154,8 +159,7 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 20%,
   font-size: 18px;
 }
 
-/* Change the width of the three columns to 100%
-(to stack horizontally on small screens) */
+/* Responsive columnas */
 @media only screen and (max-width: 600px) {
   .columns {
     width: 100%;
@@ -169,23 +173,26 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 20%,
 }
 
 .body-reservas {
-  background: rgb(197,53,205);
-  background: linear-gradient(0deg, rgba(197,53,205,0.9570203081232493) 0%, rgba(255,208,106,1) 92%);
+  background: rgb(197, 53, 205);
+  background: linear-gradient(0deg, rgba(197, 53, 205, 0.9570203081232493) 0%, rgba(255, 208, 106, 1) 92%);
 }
 
 
 
 
 /* Usuario Log In */
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box
+}
 
-/* Add padding to containers */
+/* Padding de containers*/
 .container {
   padding: 16px;
 }
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
+/* Propiedades y responsive para  usuario y contraseña*/
+input[type=text],
+input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -194,12 +201,12 @@ input[type=text], input[type=password] {
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus,
+input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
 
-/* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
