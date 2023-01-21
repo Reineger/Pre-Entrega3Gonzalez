@@ -1,0 +1,14 @@
+{
+    "workbench.colorTheme": "Vampire Theme",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "liveServer.settings.donotVerifyTags": true,
+    "git.autofetch": true,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    }
+}
