@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Metodo de Pago</h3>
+                            <label for="fname">Aceptamos Todas Las Tarjetas</label>
+                            <label for="cname">Nombre Tarjeta</label>
+                            <input type="text" id="cname" name="cardname" placeholder=" EJ:Juan Francisco González">
+                            <label for="ccnum">Numero de Tarjeta</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+                            <label for="expmonth">Mes de Expiracion</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="EJ: Abril">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Año de Expiracion</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="EJ: 2025">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CV2</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="XXX">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Recuerda mis Datos</label>
+                    <input type="submit" value="Pagar" class="btn">
+                </form>
+            </div>
+        </div>
+</body>
+
+<footer><a href="./reservas.html">Back</a></footer>
+
+</html>
